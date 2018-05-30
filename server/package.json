@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon . -e js,graphql",
+    "serve": "node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.1",
+    "nodemon": "^1.17.4",
+    "prettier": "^1.12.1"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.13.1",
+    "prisma-binding": "^2.0.2"
+  }
+}

@@ -16,8 +16,11 @@ yarn # To install all dependencies
 yarn start # To run React app
 
 # Server
-cd ../prisma
+cd ../server/prisma
 yarn global add prisma
 docker-compose up -d
-prisma deploy # To run server
+prisma deploy # To run Prisma serevr
+cd ../server
+yarn
+yarn start # To run our GraphQL server
 ```

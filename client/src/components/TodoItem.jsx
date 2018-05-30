@@ -8,7 +8,7 @@ import { GET_TODOS } from './TodoList';
 
 const UPDATE_TODO = gql`
   mutation updateTodoCompletion($id: ID!, $complete: Boolean!) {
-    updateTodo(where: { id: $id }, data: { complete: $complete }) {
+    updateTodo(id: $id, complete: $complete) {
       id
       complete
     }
@@ -17,7 +17,7 @@ const UPDATE_TODO = gql`
 
 const DELETE_TODO = gql`
   mutation deleteTodo($id: ID!) {
-    deleteTodo(where: { id: $id }) {
+    deleteTodo(id: $id) {
       id
     }
   }
